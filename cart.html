@@ -1,0 +1,68 @@
+<html>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+<div id="app">
+  <table>
+    <tr>
+      <th>序号</th>
+      <th>name</th>
+      <th>price</th>
+      <th>count</th>
+      <th>remove</th>
+    </tr>
+    <tr v-for="phone in cartPhones">
+      <td>{{phone.id}}</td>
+      <td>{{phone.name}}</td>
+      <td>{{phone.price}}</td>
+      <td>
+        <button v-bind:disabled="phone.count===0" @click="phone.count-=1">-</button>
+        {{phone.count}}
+        <button v-bind:disabled="phone.count===8" @click="phone.count+=1">+</button>
+      </td>
+      <td>
+        <button @click="phone.count=0">移除</button>
+      </td>
+    </tr>
+  </table>
+  <p>总价:{{totalPrice()}}</p>
+</div>
+
+<script>
+  var app = new Vue({
+    el: '#app',
+    data: {
+      cartPhones: [
+        { id: 1, name: 'apple', price: 10, count: 1 },
+        { id: 2, name: 'mi', price: 20, count: 2 },
+        { id: 3, name: 'huawei', price: 30, count: 3 }
+      ]
+    },
+    methods: {
+      totalPrice: function () {
+        var tol = 0;
+        for (var i = 0; i < this.cartPhones.length; i++) {
+          tol += this.cartPhones[i].price * this.cartPhones[i].count;
+        }
+        return tol;
+      }
+    }
+  })
+</script>
+
+<style>
+  table {
+    border: 1px solid black;
+    width: 25%;
+  }
+
+  th {
+    height: 50px;
+  }
+
+  td,
+  th {
+    border-bottom: 1px solid #ddd;
+  }
+</style>
+
+</html>

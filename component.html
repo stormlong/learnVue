@@ -1,0 +1,17 @@
+<html>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+  <div id="app">
+    <thl></thl>
+  </div>
+
+  <script>
+    Vue.component("thl", {
+      template: '<p>我是全局组件</p>'
+    });
+
+    new Vue({
+      el: "#app"
+    });
+  </script>
+</html>
