@@ -1,7 +1,6 @@
 # learnVue
 vue-element-admin 最新的开源前端技术栈
 
-
 git地址：https://github.com/PanJiaChen/vue-element-admin
 
 官网：https://panjiachen.github.io/vue-element-admin
@@ -9,17 +8,22 @@ git地址：https://github.com/PanJiaChen/vue-element-admin
 基于 vue 和 element-ui实现
 
 技术栈：
-      vuex
 
-vue   vue-ruter   ECMAScript5+
+vuex
 
-      vue-cli
+vue   
+
+vue-ruter   
+
+ECMAScript5+
+
+vue-cli
 
 axios
 
 element-ui
 
-vue生态圈
+#vue生态圈
 
 Vue Router 是 vue 官方的路由。它能快速的帮助你构建一个单页面或者多页面的项目。
 
