@@ -7,7 +7,7 @@ git地址：https://github.com/PanJiaChen/vue-element-admin
 
 基于 vue 和 element-ui实现
 
-技术栈：
+# 技术栈：
 
 vuex
 
@@ -23,7 +23,7 @@ axios
 
 element-ui
 
-#vue生态圈
+# vue生态圈
 
 Vue Router 是 vue 官方的路由。它能快速的帮助你构建一个单页面或者多页面的项目。
 
