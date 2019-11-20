@@ -1,11 +1,11 @@
 <html>
-  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
-  <div id="app">
-    <thl></thl>
-  </div>
+<div id="app">
+  <thl></thl>
+</div>
 
-  <!-- <script>
+<!-- <script>
     new Vue({
       el: "#app",
       components: {
@@ -16,15 +16,16 @@
     });
   </script> -->
 
-  <script>
-    var temp = {
-      template: "<h1>我是局部组件2</h1>"
-    };
-    new Vue({
-      el: "#app",
-      components: {
-        thl: temp
-      }
-    });
-  </script>
+<script>
+  var temp = {
+    template: "<h1>我是局部组件2</h1>"
+  };
+  new Vue({
+    el: "#app",
+    components: {
+      thl: temp
+    }
+  });
+</script>
+
 </html>

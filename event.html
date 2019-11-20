@@ -1,22 +1,23 @@
 <html>
-  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
-  <div id="app">
-    <button @click.ctrl="doSomething">Do something</button>
-    {{message}}
-  </div>
+<div id="app">
+  <button @click.ctrl="doSomething">Do something</button>
+  {{message}}
+</div>
 
-  <script>
-    var vm = new Vue({
-      el: "#app",
-      data: {
-        message: "aa"
-      },
-      methods: {
-        doSomething: function() {
-          this.message = "按着ctrl单击鼠标事件";
-        }
+<script>
+  var vm = new Vue({
+    el: "#app",
+    data: {
+      message: "aa"
+    },
+    methods: {
+      doSomething: function () {
+        this.message = "按着ctrl单击鼠标事件";
       }
-    });
-  </script>
+    }
+  });
+</script>
+
 </html>
